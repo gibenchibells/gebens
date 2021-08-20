@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+
+html{
+    font-family: Varela Round;
+}
+
+/* this is to remove premade margins of browsers' own css or javascript  */
+*{
+    margin: 0;
+    padding: 0%;
+    font-family: 'Varela Round', sans-serif;
+}
+
+
+
+
+/*****************************  NAV BARr***********************************************/
+
+ /***************** alignment of the navigation bar */
+.main-nav {
+    display: flex;
+    list-style: none;
+    margin-top: 10px;
+}
+.main-nav button{
+    background: none;
+    border: none;
+}
+.main-nav button:hover{
+        opacity: 0.8;
+}
+/******************ALIGNMENT OF THE BUTTONS AND BUTTON HOVER!!!!!  */
+.button a{
+    text-decoration: none;
+    float: left;
+    margin-left: 20px;
+    font-size: 20px;
+    margin-top: 10px;
+    color: #550000;
+}
+.button a:hover{
+    color: #AD5784 ;
+}
+/******************SHOPPINGCART LOGO PUT AT THE RIGHT  */
+.push {
+    margin-left: auto;
+}
+.push button{
+    border: none;
+    background: none;
+}
+.push button:hover{
+    opacity: 0.5;
+}
+
+/******************SIZE OF LOGO HEHE  */
+.zone img{
+    width: 60px;
+}
+
+/******************STICKY NAV BAR  */
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.blue {
+    background: #fac4b2;
+    border: none;
+}
+
+.contactbody{
+    height: 100vh;
+    width: 100vw;
+    background: linear-gradient(-25deg,#314984, #D6F499, #FFE5A0,#FFB8A0, #6E003A );
+}
+div{
+    display: flex;
+    justify-content: center;
+}
+
+.text{
+    padding: 30px;
+    font-weight: 300px;
+    font-size: medium;
+}

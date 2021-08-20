@@ -1,0 +1,377 @@
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+
+html{
+    font-family: Varela Round;
+}
+
+/* this is to remove premade margins of browsers' own css or javascript  */
+*{
+    margin: 0;
+    padding: 0%;
+    font-family: 'Varela Round', sans-serif;
+}
+
+.zone {
+    cursor:pointer;
+    color:#FFF;
+    font-size:2em;
+    border-radius:4px;
+    border:1px solid #bbb;
+    transition: all 0.3s linear;
+}
+
+
+
+/*****************************  NAV BARr***********************************************/
+
+ /***************** alignment of the navigation bar */
+.main-nav {
+    display: flex;
+    list-style: none;
+    margin-top: 10px;
+}
+
+.main-nav button{
+    background: none;
+    border: none;
+}
+.main-nav button:hover{
+        opacity: 0.8;
+}
+
+/******************ALIGNMENT OF THE BUTTONS AND BUTTON HOVER!!!!!  */
+.button a{
+    text-decoration: none;
+    float: left;
+    margin-left: 20px;
+    font-size: 20px;
+    margin-top: 10px;
+    color: #550000;
+}
+.button a:hover{
+    color: #AD5784 ;
+}
+/******************SHOPPINGCART LOGO PUT AT THE RIGHT  */
+.push {
+    margin-left: auto;
+}
+.push button{
+    border: none;
+    background: none;
+}
+
+
+/******************SIZE OF LOGO HEHE  */
+.zone img{
+    width: 60px;
+}
+
+/******************STICKY NAV BAR  */
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+
+/*********************************************** COVERRRRRRR*****************************************/
+.container {
+    height: 82vh; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(-25deg,#314984, #D6F499, #FFE5A0,#FFB8A0, #6E003A );
+}
+
+/******************LE SLIDE SHOWS  */
+.slideshow{
+    height: 70%;
+    width: 50%;
+    position: absolute;
+    overflow: hidden;
+}
+
+/******************LE POSITION SLIDE SHOWS  */
+.middle{
+    position: absolute;
+    top: 45%;
+    left: 55%;
+    transform: translate(-50%, -50%);
+}
+/******************navigation b utton  */
+.navigation{
+    position: absolute;
+    bottom: 2%;
+    left: 18%;
+    display: flex;
+    
+}
+images .image{
+    animation: 5s linear infinite;
+}
+
+.cart{
+    cursor: pointer;
+}
+
+#checked{
+    display: none;
+}
+
+
+   
+/* *****************shape of the navigation button */
+.bar{
+    width: 50px;
+    height: 7px;
+    border: solid 2px #74220C;
+    border-radius: 25px;
+    margin: 6px;
+    cursor: pointer;
+    position: relative;
+}
+
+.bar:hover{
+    background: #74220C;
+}
+
+input[name="r"]{
+    position: absolute;
+    visibility: hidden;
+}
+
+.images{
+    width:500%;
+    height: 100%;
+    display: flex;
+}
+.image{
+    width: 20%;
+    transition: 2s;
+}
+.image img{
+    max-width: 600px;
+    height: 600px;
+}
+
+
+#r1:checked ~ .s1{
+    margin-left: 0;
+}
+
+#r2:checked ~ .s1{
+    margin-left: -20%;
+}
+#r3:checked ~ .s1{
+    margin-left: -40%;
+}
+
+#r4:checked ~ .s1{
+    margin-left: -60%;
+}
+
+#r5:checked ~ .s1{
+    margin-left: -80%;
+}
+
+/***********************  shop items ***************************************************************/
+.shopness h1{
+    text-align: center;
+    font-size: 20px;
+}
+
+.shopness{
+    background: #F3AAAA;
+}
+
+.shop-item{
+   margin: 50px; 
+}
+
+.title{
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+    font-size: 2.5em;
+    color: rgb(97, 58, 58);  
+}
+
+.shop-item img{
+    height: 360px;
+}
+
+
+.price {
+    flex-grow: 1;
+    color: rgb(170, 66, 66);
+    text-align: center;
+    font-size: 150%;
+}
+
+.shop-item-button{
+    border-radius: 40px;
+    padding: 5px;
+    background: #e29664;
+    color: #FFF;
+    border: none;
+    
+}
+.shop-item-button:hover{
+    background: #D4AE6A;
+    color: #6E003A;
+}
+.shop-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+/*************  CART ITEMS KJSZDHFKJSDHFJK*********************************************************/
+
+.cart-header {
+    font-weight: bold;
+    font-size: 1.25em;
+    color: #333;
+}
+
+.cart-column {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid black;
+    margin-right: 1.5em;
+    padding-bottom: 10px;
+    margin-top: 10px;
+}
+
+.cart-row {
+    display: flex;
+}
+
+.cart-item {
+    width: 45%;
+}
+
+.cart-price {
+    width: 20%;
+    font-size: 1.2em;
+    color: #333;
+}
+
+.cart-quantity {
+    width: 35%;
+}
+
+.cart-item-title {
+    color: #333;
+    margin-left: .5em;
+    font-size: 1.2em;
+}
+
+.cart-item-image {
+    width: 75px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.btn-purchase{
+    border: none;
+    padding: 10px;
+    background: #6e88a9;
+    font-size: medium;
+    cursor: pointer;
+}
+.btn-purchase:hover{
+    background: linear-gradient(#7EA96E, #F1EFBC, #F1C8BC);
+}
+.btn-danger {
+    color: white;
+    background-color: #EB5757;
+    border: none;
+    border-radius: .3em;
+    font-weight: bold;
+    padding: 10px;
+}
+
+.btn-danger:hover {
+    background-color: #CC4C4C;
+}
+
+.cart-quantity-input {
+    height: 34px;
+    width: 50px;
+    border-radius: 5px;
+    border: 1px solid #56CCF2;
+    background-color: #eee;
+    color: #333;
+    padding: 0;
+    text-align: center;
+    font-size: 1.2em;
+    margin-right: 25px;
+}
+
+.cart-row:last-child {
+    border-bottom: 1px solid black;
+}
+
+.cart-row:last-child .cart-column {
+    border: none;
+}
+
+.cart-total {
+    text-align: end;
+    margin-top: 10px;
+    margin-right: 30px;
+}
+
+.cart-total-title {
+    font-weight: bold;
+    font-size: 1.5em;
+    color: black;
+    margin-right: 20px;
+}
+
+.cart-total-price {
+    color: #333;
+    font-size: 1.1em;
+    
+}
+
+.btn-purchase {
+    display: block;
+    margin-left: 40%;
+    font-size: 1.75em;
+    background: #70D0C6;
+    border-radius: 20px;
+    padding: 8px;
+}
+
+
+.cart-container{
+    background: #6e88a9;
+    padding: 20px;
+    max-width: 100%;
+}
+
+/*************  Footer*********************************************************/
+footer {
+    text-align: center;
+}
+
+/***********************************************************************
+
+/***********************************************************************
+ *  Yellow Background
+ **********************************************************************/
+.yellow {
+    background: #F3AAAA; /* Old browsers */
+    
+}
+
+/***********************************************************************
+ *  Blue Background
+ **********************************************************************/
+.blue {
+    background: #fac4b2;
+    border: none;
+}
+

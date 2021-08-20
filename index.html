@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>ShopaZon</title>
+  <link rel="stylesheet" type="text/css" href="./style.css">
+  <script src="store.js" async></script>
+</head>
+<body>
+  <nav class="zone blue sticky">
+    
+      <ul class="main-nav">
+          <li>
+            <button class="nomnoms">
+              <a href="index.html">
+                <img src="images/nomnoms.png" class ="logo">
+              </a>
+            </button>
+          </li>
+            <li class="button"><a href="index.html">Home</a></li>
+            <li class="button"><a href="#PRODUCTSSSSS">Products</a></li>
+            <li class="button"><a href="contacts.html">Contacts</a></li>
+          <li class="push"> 
+            <button class="pushcartbutton" >
+            <a href="#cartshopping">
+              <img src="images/cartness.png" class="cart" >
+            </a>
+            </button>
+          </li>
+      </ul>
+
+  </nav>
+  <div class="container">   
+    <div class="slideshow middle">
+    <div class="images">
+        <input type="radio" name = "r" id="r1" checked>
+        <input type="radio" name = "r" id="r2">
+        <input type="radio" name = "r" id="r3">
+        <input type="radio" name = "r" id="r4">
+        <input type="radio" name = "r" id="r5">
+        <div class="image s1"><img src="images/bento.jpg" ></div>
+        <div class="image"><img src="images/moo.jpg" ></div>
+        <div class="image"><img src="images/fruits.jpeg" ></div>
+        <div class="image"><img src="images/chicken_miso_and_49410_16x9.jpg" ></div>
+        <div class="image"><img src="images/rilakkuma.jpg" ></div>
+
+
+    </div>
+    <script type="text/javascript">
+      var counter = 1;
+      setInterval(function(){
+        document.getElementById('r' + counter).checked = true;
+        counter++;
+        if(counter>5){
+          counter=1
+        }
+      },2500)
+    </script>
+
+    <div class="navigation">
+        <label for="r1" class="bar"></label>
+        <label for="r2" class="bar"></label>
+        <label for="r3" class="bar"></label>
+        <label for="r4" class="bar"></label>
+        <label for="r5" class="bar"></label>
+    </div>
+    <div>
+      <label for=""></label>
+    </div>
+
+    
+</div> </div>
+
+
+  <section class="shopness">
+    <a id = "PRODUCTSSSSS">
+      <h1>PRODUCTS</h1>
+          <div class="shop-items">
+            
+            <div class="shop-item">
+                  <span class="title">Bento</span>
+                  <img  class = "item-image" src="images/bento.jpg">
+                  <div class="details">
+                    <span class="item-price">$57.93</span><br>
+                    <span class="desc"> A fun bento inspired by the anime Pororo</span><br>
+                    <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                  </div>
+            </div>   
+            
+            <div class="shop-item">
+              <span class="title">CowMoo</span>
+                  <img  class = "item-image" src="images/moo.jpg">
+                  <div class="details">
+                    <span class="item-price">$90.65</span><br>
+                    <span class="desc"> An Adorable Bento inspired by our dairy producing friend ms. Cow </span><br>
+                    <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                  </div>
+            </div>
+
+            <div class="shop-item">
+              <span class="title">Fruity</span>
+                  <img  class = "item-image" src="images/fruits.jpeg">
+                  <div class="details">
+                    <span class="item-price">$200</span><br>
+                    <span class="desc"> A healthy bento mixed with fruits and veggies!</span><br>
+                    <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                  </div>
+            </div>
+            <div class="shop-item">
+              <span class="title">MisoChick</span>
+                  <img  class = "item-image" src="images/chicken_miso_and_49410_16x9.jpg">
+                  <div class="details">
+                    <span class="item-price">$99.99</span><br>
+                    <span class="desc"> Chick-y soup perfect for cold weathers!</span><br>
+                    <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                  </div>
+            </div>
+
+            <div class="shop-item">
+              <span class="title">Peggy</span>
+                  <img  class = "item-image" src="images/piggy.jpg">
+                  <div class="details">
+                    <span class="item-price">$78.98</span><br>
+                    <span class="desc"> An oinkylicious lunch!</span><br>
+                    <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                  </div>
+            </div>
+            <div class="shop-item">
+              <span class="title">Akkuma</span>
+                  <img  class = "item-image" src="images/rilakkuma.jpg">
+                  <div class="details">
+                    <span class="item-price">$76.78</span><br>
+                    <span class="desc"> Our Friendly Bear good enough to eat!</span><br>
+                    <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                  </div>
+            </div>
+            <div class="shop-item">
+              <span class="title">Tweety</span>
+                  <img  class = "item-image" src="images/chick.jpg">
+                  <div class="details">
+                    <span class="item-price">$50.99</span><br>
+                    <span class="desc"> Chick-y snack perfect to share with friends!</span><br>
+                    <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                  </div>
+            </div>
+
+            <div class="shop-item">
+              <span class="title">NekoSoup</span>
+                  <img  class = "item-image" src="images/food-art5.jpg">
+                  <div class="details">
+                    <span class="item-price">$54.50</span><br>
+                    <span class="desc"> A friend of MisoChick! mr. NekoSoup at your service!</span><br>
+                    <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                  </div>
+            </div>
+
+            <div class="shop-item">
+              <span class="title shoptitle">FunBurgs</span>
+                  <img class = "item-image" src="images/funburgs.jpg">
+                  <div class="details">
+                    <span class="item-price">$210.50</span><br>
+                    <span class="desc"> Animal inspired burger snacks for everyone!</span><br>
+                    <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                  </div>
+            </div>
+          </div>
+  </a>
+    
+    
+
+  </section>
+
+  <section class="shopness">
+    <h1></h1>
+    <div class="cartitemout" ><a id="cartshopping"></a>
+      <div class="cart-container">
+        <div class="cart-row">
+        <span class="cart-item cart-header cart-column">ITEM</span>
+        <span class="cart-price cart-header cart-column">PRICE</span>
+        <span class="cart-quantity cart-header cart-column">QUANTITY</span>
+      </div>
+      
+
+        <div class="cart-items">
+          
+        </div>
+       
+        <div class="cart-total">
+            <strong class="cart-total-title">Total</strong>
+            <span class="cart-total-price">$0</span>
+        </div>
+        <button class="btn btn-primary btn-purchase" id="456" type="button">PURCHASE</button>
+      </div>
+      
+    </div>
+      
+      
+
+  </section>
+
+  
+  <footer class="zone yellow">gebens</footer>
+</div>
+</body>
+</html>
